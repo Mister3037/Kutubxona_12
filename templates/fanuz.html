@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fanlar</title>
+</head>
+<body>
+<form method="get">
+<input type="text" name="qidiruv">
+<button>SEARCH</button>
+</form>
+
+{% for i in fanlaruz %}
+<h3>{{i.id}}. {{i.fan}}</h3>
+<a href="/fanochir/{{i.id}}"><button>DELETE</button></a>
+{%endfor%}
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yonalish</title>
+</head>
+<body>
+{% for i in yonalishlar %}
+<h3>{{i.id}}. {{i.nom}}</h3>
+<a href="/yonalishochir/{{i.id}}"><button>DLETE</button></a>
+
+{% endfor %}
+
+</body>
+</html>

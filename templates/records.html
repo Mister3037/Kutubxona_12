@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record</title>
+</head>
+<body>
+      <form method="get">
+      <input type="text", nom="Qidiruv">
+      <button>SEARCH</button>
+      <h1>Barcha recordlar ro'yhati:</h1>
+      {% for i in recordlar %}
+      <h3>{{i.id}}. {{i.talaba_fk}}</h3>
+      {% endfor %}
+      </form>
+</body>
+</html>

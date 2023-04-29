@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob</title>
+</head>
+<body>
+      <h1>Barcha talabalar</h1>
+      {%for i in kitoblar%}
+      <h2>{{i.id}}</h2>
+      <br>
+      <a href="/drop/{{i.id}}/"><button>Delete</button></a>
+      {% endfor %}
+</body>
+</html>

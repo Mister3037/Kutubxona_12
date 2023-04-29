@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muallif</title>
+</head>
+<body>
+<form method="get">
+<input type="tel" name="qidiruv">
+<button>SEARCH</button>
+</form>
+<br>
+<br>
+<br>
+<br>
+
+{% for i in muallif_i %}
+<h2>{{i.id}}.{{i.ism}}</h2>
+<a href="/muallif_ochir/{{i.id}}"><button>DELETE</button></a>
+{% endfor %}
+
+</body>
+</html>

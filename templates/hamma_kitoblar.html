@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob</title>
+</head>
+<body>
+    <form method="get">
+        <input type="text" name="qidiruv">
+        <button>Qidirish</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Barcha kitoblar ro'yhati</h1>
+    {% for i in kitoblar %}
+    <h3>{{i.id}}. {{i.nom}}</h3>
+    <a href="/drop/{{i.id}}/"><button>Delete</button></a>
+    {% endfor %}
+
+
+</body>
+</html>

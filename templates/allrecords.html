@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record</title>
+</head>
+<body>
+<form method="get">
+<input type="text" nom="Search">
+<button>SEARCH</button>
+</form>
+<br>
+<br>
+<br>
+      {% for i in all_record %}
+<br>
+      <h2>{{i.id}}</h2>
+
+
+      {% endfor %}
+</body>
+</html>
